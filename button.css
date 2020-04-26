@@ -1,0 +1,47 @@
+                  /* for maintain the position*/
+body{
+	position:absolute;
+	left:50%;
+	top:30%; 
+}
+#button{
+
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+
+	border: 0.5px solid grey;
+	border-radius: 30px;
+	height: 42px;
+	width: 100px;
+	display:flex;
+	flex-direction: row;
+	padding: 4px;
+
+}
+#moving_button{
+	height: 38px;
+	width: 38px;
+	border-radius: 55px;
+	border: 1px solid grey;
+}
+input {
+	display: none;
+}
+label {
+	height: 44px;
+	width:100px;
+}
+input[name="toggle"]:checked + div{
+background-color: #25D366;
+}
+input[name="toggle"]:checked + div label{
+	display: flex;
+	flex-direction: row-reverse;
+} 
+input[name="toggle"]:checked + div label #moving_button{
+	height: 38px;
+	width: 38px;
+	border-radius: 55px;
+	border: 1px solid grey;
+	background-color: grey;
+}
+
